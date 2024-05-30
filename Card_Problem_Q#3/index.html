@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card {
+      position: absolute;
+      width: 100px;
+      height: 150px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      animation: enter 2s forwards;
+    }
+
+    @keyframes enter {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    #card10 {
+      background-image: url(10-D.jpg);
+      animation-delay: 0s;
+      z-index: 1;
+      left: 0px;
+      top: 0px;
+    }
+
+    #cardJ {
+      background-image: url(J-D.jpg);
+      animation-delay: 0.4s; /* Adjusted delay */
+      z-index: 2;
+      left: 20px; /* Adjusted position */
+      top: 50px; /* Adjusted position */
+    }
+
+    #cardQ {
+      background-image: url(Q-D.jpg);
+      animation-delay: 0.8s; /* Adjusted delay */
+      z-index: 3;
+      left: 40px; /* Adjusted position */
+      top: 100px; /* Adjusted position */
+    }
+
+    #cardK {
+      background-image: url(K-D.jpg);
+      animation-delay: 1.2s; /* Adjusted delay */
+      z-index: 4;
+      left: 60px; /* Adjusted position */
+      top: 150px; /* Adjusted position */
+    }
+
+    #cardA {
+      background-image: url(A-D.jpg);
+      animation-delay: 1.6s; /* Adjusted delay */
+      z-index: 5;
+      left: 80px; /* Adjusted position */
+      top: 200px; /* Adjusted position */
+    }
+  </style>
+</head>
+<body>
+  <div id="card10" class="card"></div>
+  <div id="cardJ" class="card"></div>
+  <div id="cardQ" class="card"></div>
+  <div id="cardK" class="card"></div>
+  <div id="cardA" class="card"></div>
+</body>
+</html>
